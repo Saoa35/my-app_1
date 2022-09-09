@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Link, NavLink, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 
@@ -49,21 +49,21 @@ const Navigate = () => {
   return (
     <ul>
       <li>
-        <Link to='/'>
+        <Link to='/' className={'nav-link'}>
           Home
         </Link>
       </li>
 
       <li>
-        <Link to='/about'>
+        <NavLink to='/about' className={'nav-link'}>
           About
-        </Link>
+        </NavLink>
       </li>
 
       <li>
-        <Link to='/users'>
+        <NavLink to='/users' className={'nav-link'}>
           Users
-        </Link>
+        </NavLink>
       </li>
     </ul>
   )
