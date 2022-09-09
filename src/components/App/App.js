@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 
@@ -37,7 +38,7 @@ class Users extends React.Component {
     return(
       <div>
         <h3>
-          Users
+          Users Page
         </h3>
       </div>
     )
@@ -47,7 +48,9 @@ class Users extends React.Component {
 function App() {
   return (
     <div className="App">
-      
+      <BrowserRouter>
+        <Route path='/' component={Home}/>
+      </BrowserRouter>
     </div>
   );
 }
