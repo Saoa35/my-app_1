@@ -23,7 +23,21 @@ class AboutPage extends React.Component {
     return(
       <div>
         <h3>
-        About Page
+          About Page
+        </h3>
+      </div>
+    )
+  }
+}
+
+class Users extends React.Component {
+
+  render() {
+
+    return(
+      <div>
+        <h3>
+          Users
         </h3>
       </div>
     )
