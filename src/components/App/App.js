@@ -69,15 +69,24 @@ const Navigate = () => {
   )
 }
 
+const ConstData = () => {
+  return(
+    <h1>
+      React Router DOM!
+    </h1>
+  )
+}
+
 function App() {
   return (
     <div className="App">
 
-      <h1>
-        React Router DOM!
-      </h1>
+      <ConstData/>
 
       <BrowserRouter>
+
+        <Navigate/>
+
         <Switch>
           <Route path='/' component={Home} exact/>
           <Route path='/about' component={AboutPage}/>
